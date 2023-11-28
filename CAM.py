@@ -158,14 +158,15 @@ class SFCThread(QThread):
    def run(self):
       try:
          self.connect_serial_sfc()
+         _this = MyApplication
          while self.is_running:
             if self.serial_sfc and self.serial_sfc.is_open:
                data = self.serial_sfc.read()
                if len(data) > 0:
-                  MyApplication.flag_signal_sfc = True
-                  if MyApplication.flag_signal_sfc:  
+                  _this.flag_signal_sfc = True
+                  if _this.flag_signal_sfc:  
                      self.data_received.emit(data)
-                     MyApplication.flag_signal_sfc = False
+                     _this.flag_signal_sfc = False
       except Exception as e:
          self.signal_error.emit()
          logger.error(f'Connect SFC Error: {e}')
@@ -187,6 +188,7 @@ class CameraThread(QThread):
       self.cap = cv2.VideoCapture(self.camera_id, cv2.CAP_DSHOW)
       
    def run(self):
+      self.is_alert_err = True
       while self.is_running:
          try:
             count_input_devices = len(FilterGraph().get_input_devices())
@@ -195,15 +197,20 @@ class CameraThread(QThread):
                if self.ret:
                   self.frame_received.emit(self.frame)
             elif count_input_devices < 1:
-               self.update_error_signal.emit()
+               if self.is_alert_err: 
+                  self.update_error_signal.emit()
+                  self.is_alert_err = False
                # stop thread
                self.stop() 
                self.wait() 
                
          except Exception as e:
-            time.sleep(0.1)
-            self.cap.release()
-            logger.error(f'Camera {self.camera_id} error: {e}')
+            if self.is_alert_err: 
+               self.update_error_signal.emit()
+               time.sleep(0.1)
+               self.cap.release()
+               logger.error(f'Camera {self.camera_id} error: {e}')
+               self.is_alert_err = False
          cv2.waitKey(1)
          
    def stop(self):
@@ -266,11 +273,14 @@ class MyApplication(QMainWindow):
       screen_geometry = QDesktopWidget().availableGeometry()
       self.setGeometry(screen_geometry.width() - self.width(), screen_geometry.height() - self.height(), self.width(), self.height())
       
+      
       # origin background
       original_pixmap = QPixmap('./icons/bg-no-camera.png')
       scaled_pixmap = original_pixmap.scaled(self.Uic.Frame1.size(), Qt.KeepAspectRatio, Qt.SmoothTransformation)
       self.Uic.Frame1.setPixmap(scaled_pixmap)
       self.show()
+      
+
    
       
    # read config handler
@@ -303,24 +313,28 @@ class MyApplication(QMainWindow):
    def closeEvent(self, event):
       req = QMessageBox.question(self, 'Confirm Close', 'Do you want to close the application?',QMessageBox.Yes | QMessageBox.Cancel, QMessageBox.Cancel)
       if req == QMessageBox.Yes:
-         PLCThread.send_signal_to_plc(b'5/r/n')
+         # PLCThread.send_signal_to_plc(b'5/r/n')
          event.accept()  
       else:
          event.ignore()  
 
+   
    def update_status_camera_error(self):
       self.is_update_cam_error = True
       if self.is_update_cam_error: 
          logger.error(f'CAM ERROR')
          self.is_update_cam_error = False
    
-         
       self.Uic.ResultContent.setText('CAM ERROR')
       self.Uic.ResultContent.setStyleSheet('font-size: 16px;\nfont: 16pt "Segoe UI"; border: 1px solid #ccc; color: #fff; background-color: #a84632;')
       original_pixmap = QPixmap('./icons/bg-no-camera.png')
       scaled_pixmap = original_pixmap.scaled(self.Uic.Frame1.size(), Qt.KeepAspectRatio, Qt.SmoothTransformation)
       self.Uic.Frame1.setPixmap(scaled_pixmap)
       
+   # def reconnect_camera(self):
+   #    self.THREAD_CAMERA_1 = CameraThread(0)
+   #    self.THREAD_CAMERA_1.frame_received.connect(self.display_frame1)
+   #    self.THREAD_CAMERA_1.start()
    
    # handle plc signal
    def handle_signal_plc(self, data):
@@ -348,7 +362,7 @@ class MyApplication(QMainWindow):
             self.count_frame +=1
             if self.data_scan1 is None: 
                self.data_scan1 = self.read_barcode_zxingcpp(self.frame1, self.gray1)
-               self.data_scan1 = b'test'
+               # self.data_scan1 = b'test'
             if self.data_scan1 != None:
                break
             
@@ -410,8 +424,7 @@ class MyApplication(QMainWindow):
             image_filename = "image_NG/{}/{}.png".format(get_current_date(),self.format_current_time())
             cv2.imwrite(image_filename, self.frame1)
             
-            
-            self.THREAD_PLC.send_signal_to_plc(b'0\r\n')
+            self.THREAD_PLC.send_signal_to_plc(b'2\r\n')
             self.Uic.ResultContent.setText('FAILED SCAN')
             self.Uic.ResultContent.setStyleSheet('font-size: 16px;\nfont: 16pt "Segoe UI"; border: 1px solid #ccc; color: #fff; background-color: #a84632;')
          
@@ -427,24 +440,21 @@ class MyApplication(QMainWindow):
       
       
    def handle_signal_sfc(self, data):
-      print(data)
-      # if data == b'0' or data == b"\x00\x00":
-      if (data == b'00' or data==b'\x00') and self.frame1 is not None:
+      if data == b'0'  and self.frame1 is not None:
          print('Tin hieu FAIL SFC')
          self.Uic.ResultContent.setText('FAILED')
          self.Uic.ResultContent.setStyleSheet('font-size: 16px;\nfont: 16pt "Segoe UI"; border: 1px solid #ccc; color: #fff; background-color: #a84632;')
          logger.error(f'Nhan tin hieu FAIL tu SFC: {data}')
          
-         self.THREAD_PLC.send_signal_to_plc(b'00\r\n')
+         self.THREAD_PLC.send_signal_to_plc(b'0\r\n')
          logger.info('Gui tin hieu FAIL SFC check cho PLC')
          
-      # elif data == b'1' or data == b'\x01\x00':
-      elif (data == b'01' or b'\x01') and self.frame1 is not None :
+      elif data == b'1' and self.frame1 is not None :
          print('Tin hieu OK SFC')
          self.Uic.ResultContent.setText('PASS')
          self.Uic.ResultContent.setStyleSheet('font-size: 16px;\nfont: 16pt "Segoe UI"; border: 1px solid #ccc; color: #fff; background-color: #32a851;')
          logger.info(f'Nhan tin hieu PASS check tu SFC: {data}')
-         self.THREAD_PLC.send_signal_to_plc(b'01\r\n')
+         self.THREAD_PLC.send_signal_to_plc(b'1\r\n')
          logger.info('Gui tin hieu PASS SFC check cho PLC')
       else:
          print(f'SFC gui sai tin hieu: {data}')
@@ -539,6 +549,7 @@ class MyApplication(QMainWindow):
                         return data.text.encode('utf-8')
                     else:
                         return self.read_barcode_pyzbar(roi_warped,roi_processed, frame, gray)
+                     
    def read_barcode_pyzbar(self, roi_warped, roi_processed, frame, gray):
         data = decode(frame)
         if len(data) > 0 and len(data[0].data) == 11: 

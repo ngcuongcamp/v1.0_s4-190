@@ -1,11 +1,10 @@
-# Scanner S4-190
+## Scanner S4-190
 
-- `note`: S4-200 sends signal scan(QR Code)
 - `objects`: S4-200(PLC), S4-190, SFC
 
-## Signals:
+### Signals:
 
-### `1. Signal S4-200(PLC) send/ S4-190 receive`
+#### _`1. Signal S4-200(PLC) sends/ S4-190 receives`_
 
 - `b'0'`: Failed to scan QRCode(S4-200)
 - `b'1'`: Signal scan 3Code
@@ -13,18 +12,18 @@
 - `b'5'`: Reset program
 - `b'9'`: Close program
 
-### `2. Signal S4-190 send/ SFC receive`
+#### _`2. Signal S4-190 sends/ SFC receives`_
 
 - `b'xxxxxxxxx'`: QRCode
 - `b'yyyyyyyyy'`: 3Code
 
-### `3. Signal SFC send/ S4-190 receive`
+#### _`3. Signal SFC sends/ S4-190 receives`_
 
-- `b'00'`: Check SFC fail
-- `b'01'`: Check SFC pass
+- `b'0'`: Check SFC fail
+- `b'1'`: Check SFC pass
 
-### `4. Signal S4-190 send/ S4-200(PLC) receive`
+#### _`4. Signal S4-190 sends/ S4-200(PLC) receives`_
 
-- `b'00'`: Check SFC fail
-- `b'01'`: Check SFC pass
-- `b'0`: Scan 3Code fail
+- `b'0'`: Check SFC fail
+- `b'1'`: Check SFC pass
+- `b'2`: Scan 3Code fail

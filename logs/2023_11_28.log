@@ -1,0 +1,257 @@
+2023-11-28 08:06:16,890 - INFO - Nhan tin hieu scan tu PLC: b'1'
+2023-11-28 08:06:18,136 - INFO - Scanned OK
+data_cam1: b'test' - data_cam2: b'555555555555'
+2023-11-28 08:06:21,625 - INFO - Nhan tin hieu scan tu PLC: b'1'
+2023-11-28 08:06:21,671 - INFO - Scanned OK
+data_cam1: b'test' - data_cam2: b'555555555555'
+2023-11-28 08:06:23,720 - ERROR - Failed to scan QRCode (S4-200): b'0'
+2023-11-28 08:06:26,054 - ERROR - Failed to scan QRCode (S4-200): b'0'
+2023-11-28 08:06:26,561 - ERROR - Failed to scan QRCode (S4-200): b'0'
+2023-11-28 08:06:27,367 - ERROR - Failed to scan QRCode (S4-200): b'0'
+2023-11-28 08:06:30,050 - ERROR - Failed to scan QRCode (S4-200): b'0'
+2023-11-28 08:06:30,602 - ERROR - Failed to scan QRCode (S4-200): b'0'
+2023-11-28 08:06:35,383 - INFO - Nhan tin hieu PASS check tu SFC: b'\x01'
+2023-11-28 08:06:35,383 - INFO - Gui tin hieu PASS SFC check cho PLC
+2023-11-28 08:06:36,665 - INFO - Nhan tin hieu PASS check tu SFC: b'\x02'
+2023-11-28 08:06:36,665 - INFO - Gui tin hieu PASS SFC check cho PLC
+2023-11-28 08:06:38,988 - INFO - Nhan tin hieu PASS check tu SFC: b'\x02'
+2023-11-28 08:06:38,988 - INFO - Gui tin hieu PASS SFC check cho PLC
+2023-11-28 08:06:40,159 - INFO - Nhan tin hieu PASS check tu SFC: b'\x02'
+2023-11-28 08:06:40,159 - INFO - Gui tin hieu PASS SFC check cho PLC
+2023-11-28 08:06:41,253 - INFO - Nhan tin hieu PASS check tu SFC: b'\x01'
+2023-11-28 08:06:41,253 - INFO - Gui tin hieu PASS SFC check cho PLC
+2023-11-28 08:06:42,429 - INFO - Nhan tin hieu PASS check tu SFC: b'\x02'
+2023-11-28 08:06:42,429 - INFO - Gui tin hieu PASS SFC check cho PLC
+2023-11-28 08:06:42,920 - INFO - Nhan tin hieu PASS check tu SFC: b'\x01'
+2023-11-28 08:06:42,920 - INFO - Gui tin hieu PASS SFC check cho PLC
+2023-11-28 08:06:43,410 - INFO - Nhan tin hieu PASS check tu SFC: b'\x02'
+2023-11-28 08:06:43,410 - INFO - Gui tin hieu PASS SFC check cho PLC
+2023-11-28 08:06:44,012 - INFO - Nhan tin hieu PASS check tu SFC: b'\x01'
+2023-11-28 08:06:44,012 - INFO - Gui tin hieu PASS SFC check cho PLC
+2023-11-28 08:06:44,962 - INFO - Nhan tin hieu PASS check tu SFC: b'\x02'
+2023-11-28 08:06:44,962 - INFO - Gui tin hieu PASS SFC check cho PLC
+2023-11-28 08:06:45,451 - INFO - Nhan tin hieu PASS check tu SFC: b'\x02'
+2023-11-28 08:06:45,451 - INFO - Gui tin hieu PASS SFC check cho PLC
+2023-11-28 08:06:45,849 - INFO - Nhan tin hieu PASS check tu SFC: b'\x02'
+2023-11-28 08:06:45,849 - INFO - Gui tin hieu PASS SFC check cho PLC
+2023-11-28 08:07:13,251 - ERROR - Nhan tin hieu FAIL tu SFC: b'\x00'
+2023-11-28 08:07:13,251 - INFO - Gui tin hieu FAIL SFC check cho PLC
+2023-11-28 08:07:18,068 - INFO - Nhan tin hieu PASS check tu SFC: b'0'
+2023-11-28 08:07:18,068 - INFO - Gui tin hieu PASS SFC check cho PLC
+2023-11-28 08:07:18,068 - INFO - Nhan tin hieu PASS check tu SFC: b'2'
+2023-11-28 08:07:18,069 - INFO - Gui tin hieu PASS SFC check cho PLC
+2023-11-28 08:08:22,232 - INFO - Nhan tin hieu PASS check tu SFC: b'\x00'
+2023-11-28 08:08:22,232 - INFO - Gui tin hieu PASS SFC check cho PLC
+2023-11-28 08:08:25,085 - ERROR - Nhan tin hieu FAIL tu SFC: b'\x01'
+2023-11-28 08:08:25,085 - INFO - Gui tin hieu FAIL SFC check cho PLC
+2023-11-28 08:08:26,536 - INFO - Nhan tin hieu PASS check tu SFC: b'0'
+2023-11-28 08:08:26,536 - INFO - Gui tin hieu PASS SFC check cho PLC
+2023-11-28 08:08:26,536 - INFO - Nhan tin hieu PASS check tu SFC: b'2'
+2023-11-28 08:08:26,536 - INFO - Gui tin hieu PASS SFC check cho PLC
+2023-11-28 08:08:27,630 - ERROR - Nhan tin hieu FAIL tu SFC: b'\x01'
+2023-11-28 08:08:27,631 - INFO - Gui tin hieu FAIL SFC check cho PLC
+2023-11-28 08:08:28,011 - INFO - Nhan tin hieu PASS check tu SFC: b'0'
+2023-11-28 08:08:28,011 - INFO - Gui tin hieu PASS SFC check cho PLC
+2023-11-28 08:08:28,011 - INFO - Nhan tin hieu PASS check tu SFC: b'2'
+2023-11-28 08:08:28,011 - INFO - Gui tin hieu PASS SFC check cho PLC
+2023-11-28 08:08:28,359 - ERROR - Nhan tin hieu FAIL tu SFC: b'\x01'
+2023-11-28 08:08:28,359 - INFO - Gui tin hieu FAIL SFC check cho PLC
+2023-11-28 08:08:28,817 - INFO - Nhan tin hieu PASS check tu SFC: b'0'
+2023-11-28 08:08:28,817 - INFO - Gui tin hieu PASS SFC check cho PLC
+2023-11-28 08:08:28,817 - INFO - Nhan tin hieu PASS check tu SFC: b'2'
+2023-11-28 08:08:28,817 - INFO - Gui tin hieu PASS SFC check cho PLC
+2023-11-28 08:08:29,471 - INFO - Nhan tin hieu PASS check tu SFC: b'\x00'
+2023-11-28 08:08:29,471 - INFO - Gui tin hieu PASS SFC check cho PLC
+2023-11-28 08:08:36,907 - INFO - Nhan tin hieu PASS check tu SFC: b'0'
+2023-11-28 08:08:36,907 - INFO - Gui tin hieu PASS SFC check cho PLC
+2023-11-28 08:08:36,907 - INFO - Nhan tin hieu PASS check tu SFC: b'0'
+2023-11-28 08:08:36,908 - INFO - Gui tin hieu PASS SFC check cho PLC
+2023-11-28 08:08:37,366 - INFO - Nhan tin hieu PASS check tu SFC: b'0'
+2023-11-28 08:08:37,367 - INFO - Gui tin hieu PASS SFC check cho PLC
+2023-11-28 08:08:37,367 - INFO - Nhan tin hieu PASS check tu SFC: b'1'
+2023-11-28 08:08:37,367 - INFO - Gui tin hieu PASS SFC check cho PLC
+2023-11-28 08:08:38,016 - INFO - Nhan tin hieu PASS check tu SFC: b'0'
+2023-11-28 08:08:38,017 - INFO - Gui tin hieu PASS SFC check cho PLC
+2023-11-28 08:08:38,017 - INFO - Nhan tin hieu PASS check tu SFC: b'2'
+2023-11-28 08:08:38,017 - INFO - Gui tin hieu PASS SFC check cho PLC
+2023-11-28 08:10:09,646 - ERROR - Nhan tin hieu FAIL tu SFC: b'0'
+2023-11-28 08:10:09,646 - INFO - Gui tin hieu FAIL SFC check cho PLC
+2023-11-28 08:10:11,264 - INFO - Nhan tin hieu PASS check tu SFC: b'1'
+2023-11-28 08:10:11,264 - INFO - Gui tin hieu PASS SFC check cho PLC
+2023-11-28 08:10:12,231 - ERROR - Nhan tin hieu FAIL tu SFC: b'0'
+2023-11-28 08:10:12,231 - INFO - Gui tin hieu FAIL SFC check cho PLC
+2023-11-28 08:10:13,259 - INFO - Nhan tin hieu PASS check tu SFC: b'1'
+2023-11-28 08:10:13,259 - INFO - Gui tin hieu PASS SFC check cho PLC
+2023-11-28 08:10:14,207 - ERROR - Nhan tin hieu FAIL tu SFC: b'0'
+2023-11-28 08:10:14,207 - INFO - Gui tin hieu FAIL SFC check cho PLC
+2023-11-28 08:10:14,557 - INFO - Nhan tin hieu PASS check tu SFC: b'1'
+2023-11-28 08:10:14,557 - INFO - Gui tin hieu PASS SFC check cho PLC
+2023-11-28 08:11:44,542 - INFO - Nhan tin hieu scan tu PLC: b'1'
+2023-11-28 08:11:45,767 - ERROR - Failed to scan Barcode(S4-190) 
+data_cam1: None - data_cam2: b'555555555555'
+2023-11-28 08:20:46,433 - ERROR - CAM ERROR
+2023-11-28 08:20:46,537 - ERROR - Camera 0 error: NULL COM pointer access
+2023-11-28 08:20:51,439 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 08:20:51,568 - ERROR - CAM ERROR
+2023-11-28 09:45:33,668 - ERROR - Camera 0 error: 'CameraThread' does not have a signal with the signature frame_received(PyQt_PyObject)
+2023-11-28 09:47:17,494 - ERROR - Connect SFC Error: could not open port 'COM9': PermissionError(13, 'Access is denied.', None, 5)
+2023-11-28 09:47:17,601 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:17,728 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:17,856 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:17,983 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:18,109 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:18,235 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:18,361 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:18,489 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:18,615 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:18,743 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:18,869 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:18,997 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:19,123 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:19,250 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:19,377 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:19,503 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:19,631 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:19,758 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:19,884 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:20,010 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:20,137 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:20,265 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:20,392 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:20,519 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:20,647 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:20,774 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:20,900 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:21,028 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:21,154 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:21,280 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:21,406 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:21,533 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:21,660 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:21,786 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:21,914 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:22,041 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:22,167 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:22,294 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:22,421 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:22,547 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:22,674 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:22,802 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:22,929 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:23,056 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:23,183 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:23,309 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:23,437 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:23,563 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:23,691 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:23,818 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:23,944 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:24,072 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:24,200 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:24,327 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:24,455 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:24,582 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:24,709 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:24,837 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:24,963 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:25,089 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:25,217 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:25,345 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:25,471 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:25,598 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:25,723 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:25,848 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:25,975 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:26,103 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:26,231 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:26,374 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:26,501 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:26,628 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:26,755 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:26,882 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:27,009 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:27,136 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:27,263 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:27,390 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:27,518 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:27,644 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:27,771 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:27,898 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:28,024 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:28,151 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:28,279 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:28,406 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:28,532 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:28,660 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:28,788 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:28,914 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:29,042 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:29,170 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:29,297 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:29,424 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:29,550 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:29,677 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:29,804 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:29,930 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:30,057 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:30,183 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:30,285 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:30,388 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:30,490 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:30,593 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:30,696 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:30,799 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:30,902 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:31,004 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:31,107 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:31,210 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:31,312 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:31,415 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:31,518 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:31,621 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:31,723 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:31,826 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:31,929 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:32,031 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:32,134 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:32,237 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:32,339 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:32,442 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:32,545 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:32,648 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:32,751 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:32,853 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:32,956 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:33,059 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:33,162 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:33,264 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:33,367 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:33,470 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:33,573 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:33,675 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:33,778 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:33,880 - ERROR - Camera 0 error: [WinError -2147221008] CoInitialize has not been called
+2023-11-28 09:47:43,780 - INFO - Nhan tin hieu scan tu PLC: b'1'
+2023-11-28 09:47:45,141 - INFO - Scanned OK
+data_cam1: b'test' - data_cam2: b'555555555555'
+2023-11-28 09:47:46,074 - INFO - Nhan tin hieu scan tu PLC: b'1'
+2023-11-28 09:47:46,360 - INFO - Scanned OK
+data_cam1: b'test' - data_cam2: b'555555555555'
+2023-11-28 09:51:49,887 - ERROR - Camera 0 error: NULL COM pointer access
+2023-11-28 09:51:50,060 - ERROR - Camera 0 error: NULL COM pointer access
+2023-11-28 09:51:50,264 - ERROR - Camera 0 error: NULL COM pointer access
+2023-11-28 09:51:50,459 - ERROR - Camera 0 error: NULL COM pointer access
+2023-11-28 09:51:50,675 - ERROR - Camera 0 error: NULL COM pointer access
+2023-11-28 09:51:50,875 - ERROR - Camera 0 error: NULL COM pointer access
+2023-11-28 09:51:51,059 - ERROR - Camera 0 error: NULL COM pointer access
+2023-11-28 09:51:51,244 - ERROR - Camera 0 error: NULL COM pointer access
+2023-11-28 09:51:51,444 - ERROR - Camera 0 error: NULL COM pointer access
+2023-11-28 09:51:51,629 - ERROR - Camera 0 error: NULL COM pointer access
+2023-11-28 09:51:51,825 - ERROR - Camera 0 error: NULL COM pointer access
+2023-11-28 09:51:52,011 - ERROR - Camera 0 error: NULL COM pointer access
+2023-11-28 09:51:52,211 - ERROR - Camera 0 error: NULL COM pointer access
+2023-11-28 09:51:52,428 - ERROR - Camera 0 error: NULL COM pointer access
+2023-11-28 09:51:52,612 - ERROR - Camera 0 error: NULL COM pointer access
+2023-11-28 09:51:52,804 - ERROR - Camera 0 error: NULL COM pointer access
+2023-11-28 09:52:02,603 - ERROR - CAM ERROR
+2023-11-28 09:52:02,707 - ERROR - Camera 0 error: NULL COM pointer access

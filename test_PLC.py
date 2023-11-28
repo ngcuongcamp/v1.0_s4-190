@@ -111,14 +111,15 @@ class PLCThread(QThread):
    def run (self):
       try:
          self.connect_serial()
+         _this = MyApplication
          while self.is_running:
             if self.serial_port and self.serial_port.is_open:
                data = self.serial_port.readline()
                if len(data) > 0:
-                  MyApplication.flag_signal_plc = True
-                  if MyApplication.flag_signal_plc:  
+                  _this.flag_signal_plc = True
+                  if _this.flag_signal_plc:  
                      self.data_received.emit(data)
-                     MyApplication.flag_signal_plc = False
+                     _this.flag_signal_plc = False
       
       except Exception as e:
          self.signal_error.emit()
@@ -187,6 +188,8 @@ class CameraThread(QThread):
       self.cap = cv2.VideoCapture(self.camera_id, cv2.CAP_DSHOW)
       
    def run(self):
+      self.is_alert_err = True
+      
       while self.is_running:
          try:
             count_input_devices = len(FilterGraph().get_input_devices())
@@ -195,15 +198,19 @@ class CameraThread(QThread):
                if self.ret:
                   self.frame_received.emit(self.frame)
             elif count_input_devices < 1:
-               self.update_error_signal.emit()
+               if self.is_alert_err: 
+                  self.update_error_signal.emit()
+                  self.is_alert_err = False
                # stop thread
                self.stop() 
                self.wait() 
                
          except Exception as e:
-            time.sleep(0.1)
-            self.cap.release()
-            # logger.error(f'Camera {self.camera_id} error: {e}')
+            if self.is_alert_err: 
+               self.update_error_signal.emit()
+               time.sleep(0.1)
+               self.cap.release()
+               self.is_alert_err = False
          cv2.waitKey(1)
          
    def stop(self):
@@ -348,7 +355,7 @@ class MyApplication(QMainWindow):
             self.count_frame +=1
             if self.data_scan1 is None: 
                self.data_scan1 = self.read_barcode_zxingcpp(self.frame1, self.gray1)
-               self.data_scan1 = b'test'
+               # self.data_scan1 = b'test'
             if self.data_scan1 != None:
                break
             
@@ -395,7 +402,7 @@ class MyApplication(QMainWindow):
             # self.THREAD_SFC.send_signal_to_sfc(self.data_scan1)
             # time.sleep(0.4)
             # self.THREAD_SFC.send_signal_to_sfc(self.data_scan2)   
-            self.THREAD_PLC.send_signal_to_plc(b'01')
+            self.THREAD_PLC.send_signal_to_plc(b'1')
 
             self.count_frame = 0
             self.Uic.ResultContent.setText('PASS SCAN')
@@ -412,7 +419,7 @@ class MyApplication(QMainWindow):
             # cv2.imwrite(image_filename, self.frame1)
             
             
-            self.THREAD_PLC.send_signal_to_plc(b'0\r\n')
+            self.THREAD_PLC.send_signal_to_plc(b'2\r\n')
             self.Uic.ResultContent.setText('FAILED SCAN')
             self.Uic.ResultContent.setStyleSheet('font-size: 16px;\nfont: 16pt "Segoe UI"; border: 1px solid #ccc; color: #fff; background-color: #a84632;')
          
